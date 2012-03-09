@@ -1,0 +1,619 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4D23006E13F64FD500F2A3E5 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4D23006D13F64FD500F2A3E5 /* UIKit.framework */; };
+		4D23007013F64FD500F2A3E5 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4D23006F13F64FD500F2A3E5 /* Foundation.framework */; };
+		4D23007213F64FD500F2A3E5 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4D23007113F64FD500F2A3E5 /* CoreGraphics.framework */; };
+		4D23007813F64FD500F2A3E5 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 4D23007613F64FD500F2A3E5 /* InfoPlist.strings */; };
+		4D23007A13F64FD500F2A3E5 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D23007913F64FD500F2A3E5 /* main.m */; };
+		4D23007E13F64FD500F2A3E5 /* MotionMonitorAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D23007D13F64FD500F2A3E5 /* MotionMonitorAppDelegate.m */; };
+		4D23008113F64FD500F2A3E5 /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4D23007F13F64FD500F2A3E5 /* MainWindow.xib */; };
+		4D23008413F64FD500F2A3E5 /* MotionMonitorViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D23008313F64FD500F2A3E5 /* MotionMonitorViewController.m */; };
+		4D23008713F64FD500F2A3E5 /* MotionMonitorViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4D23008513F64FD500F2A3E5 /* MotionMonitorViewController.xib */; };
+		4D23008E13F6519700F2A3E5 /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4D23008D13F6519700F2A3E5 /* CoreMotion.framework */; };
+		4DAA0C1F13F6C373007B8075 /* MetricsLog.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DAA0C1E13F6C373007B8075 /* MetricsLog.m */; };
+		4DAA0C2913F7B1B7007B8075 /* MotionService.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DAA0C2813F7B1B7007B8075 /* MotionService.m */; };
+		4DAA0C2B13F7B42F007B8075 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4DAA0C2A13F7B42F007B8075 /* CoreLocation.framework */; };
+		4DCC036213F83F0900AD9C30 /* DBAccountInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DCC030D13F83F0900AD9C30 /* DBAccountInfo.m */; };
+		4DCC036313F83F0900AD9C30 /* DBCreateAccountController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DCC030F13F83F0900AD9C30 /* DBCreateAccountController.m */; };
+		4DCC036413F83F0900AD9C30 /* DBError.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DCC031113F83F0900AD9C30 /* DBError.m */; };
+		4DCC036513F83F0900AD9C30 /* DBLoadingView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DCC031313F83F0900AD9C30 /* DBLoadingView.m */; };
+		4DCC036613F83F0900AD9C30 /* DBLoginController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DCC031513F83F0900AD9C30 /* DBLoginController.m */; };
+		4DCC036713F83F0900AD9C30 /* DBMetadata.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DCC031713F83F0900AD9C30 /* DBMetadata.m */; };
+		4DCC036813F83F0900AD9C30 /* DBQuota.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DCC031913F83F0900AD9C30 /* DBQuota.m */; };
+		4DCC036913F83F0900AD9C30 /* DBRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DCC031B13F83F0900AD9C30 /* DBRequest.m */; };
+		4DCC036A13F83F0900AD9C30 /* DBRestClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DCC031D13F83F0900AD9C30 /* DBRestClient.m */; };
+		4DCC036B13F83F0900AD9C30 /* DBSession.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DCC031F13F83F0900AD9C30 /* DBSession.m */; };
+		4DCC036C13F83F0900AD9C30 /* NSObject+SBJSON.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DCC032413F83F0900AD9C30 /* NSObject+SBJSON.m */; };
+		4DCC036D13F83F0900AD9C30 /* NSString+SBJSON.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DCC032613F83F0900AD9C30 /* NSString+SBJSON.m */; };
+		4DCC036E13F83F0900AD9C30 /* SBJSON.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DCC032813F83F0900AD9C30 /* SBJSON.m */; };
+		4DCC036F13F83F0900AD9C30 /* SBJsonBase.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DCC032A13F83F0900AD9C30 /* SBJsonBase.m */; };
+		4DCC037013F83F0900AD9C30 /* SBJsonParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DCC032C13F83F0900AD9C30 /* SBJsonParser.m */; };
+		4DCC037113F83F0900AD9C30 /* SBJsonWriter.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DCC032E13F83F0900AD9C30 /* SBJsonWriter.m */; };
+		4DCC037213F83F0900AD9C30 /* Base64Transcoder.c in Sources */ = {isa = PBXBuildFile; fileRef = 4DCC033113F83F0900AD9C30 /* Base64Transcoder.c */; };
+		4DCC037313F83F0900AD9C30 /* MPOAuthAPI.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DCC033613F83F0900AD9C30 /* MPOAuthAPI.m */; };
+		4DCC037413F83F0900AD9C30 /* MPOAuthAPIRequestLoader.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DCC033813F83F0900AD9C30 /* MPOAuthAPIRequestLoader.m */; };
+		4DCC037513F83F0900AD9C30 /* MPOAuthAuthenticationMethod.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DCC033A13F83F0900AD9C30 /* MPOAuthAuthenticationMethod.m */; };
+		4DCC037613F83F0900AD9C30 /* MPOAuthAuthenticationMethodOAuth.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DCC033C13F83F0900AD9C30 /* MPOAuthAuthenticationMethodOAuth.m */; };
+		4DCC037713F83F0900AD9C30 /* MPOAuthConnection.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DCC033E13F83F0900AD9C30 /* MPOAuthConnection.m */; };
+		4DCC037813F83F0900AD9C30 /* MPOAuthCredentiaIConcreteStore+KeychainAdditionsMac.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DCC033F13F83F0900AD9C30 /* MPOAuthCredentiaIConcreteStore+KeychainAdditionsMac.m */; };
+		4DCC037913F83F0900AD9C30 /* MPOAuthCredentialConcreteStore+KeychainAdditionsiPhone.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DCC034113F83F0900AD9C30 /* MPOAuthCredentialConcreteStore+KeychainAdditionsiPhone.m */; };
+		4DCC037A13F83F0900AD9C30 /* MPOAuthCredentialConcreteStore.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DCC034313F83F0900AD9C30 /* MPOAuthCredentialConcreteStore.m */; };
+		4DCC037B13F83F0900AD9C30 /* MPOAuthSignatureParameter.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DCC034713F83F0900AD9C30 /* MPOAuthSignatureParameter.m */; };
+		4DCC037C13F83F0900AD9C30 /* MPOAuthURLRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DCC034913F83F0900AD9C30 /* MPOAuthURLRequest.m */; };
+		4DCC037D13F83F0900AD9C30 /* MPOAuthURLResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DCC034B13F83F0900AD9C30 /* MPOAuthURLResponse.m */; };
+		4DCC037E13F83F0900AD9C30 /* MPURLRequestParameter.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DCC034D13F83F0900AD9C30 /* MPURLRequestParameter.m */; };
+		4DCC037F13F83F0900AD9C30 /* NSString+URLEscapingAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DCC034F13F83F0900AD9C30 /* NSString+URLEscapingAdditions.m */; };
+		4DCC038013F83F0900AD9C30 /* NSURL+MPURLParameterAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DCC035113F83F0900AD9C30 /* NSURL+MPURLParameterAdditions.m */; };
+		4DCC038113F83F0900AD9C30 /* NSURLResponse+Encoding.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DCC035313F83F0900AD9C30 /* NSURLResponse+Encoding.m */; };
+		4DCC038213F83F0900AD9C30 /* NSString+Dropbox.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DCC035513F83F0900AD9C30 /* NSString+Dropbox.m */; };
+		4DCC038313F83F0900AD9C30 /* db_background.png in Resources */ = {isa = PBXBuildFile; fileRef = 4DCC035713F83F0900AD9C30 /* db_background.png */; };
+		4DCC038413F83F0900AD9C30 /* db_create_account.png in Resources */ = {isa = PBXBuildFile; fileRef = 4DCC035813F83F0900AD9C30 /* db_create_account.png */; };
+		4DCC038513F83F0900AD9C30 /* db_create_account@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4DCC035913F83F0900AD9C30 /* db_create_account@2x.png */; };
+		4DCC038613F83F0900AD9C30 /* db_create_account_button.png in Resources */ = {isa = PBXBuildFile; fileRef = 4DCC035A13F83F0900AD9C30 /* db_create_account_button.png */; };
+		4DCC038713F83F0900AD9C30 /* db_create_account_button_down.png in Resources */ = {isa = PBXBuildFile; fileRef = 4DCC035B13F83F0900AD9C30 /* db_create_account_button_down.png */; };
+		4DCC038813F83F0900AD9C30 /* db_link_button.png in Resources */ = {isa = PBXBuildFile; fileRef = 4DCC035C13F83F0900AD9C30 /* db_link_button.png */; };
+		4DCC038913F83F0900AD9C30 /* db_link_button_down.png in Resources */ = {isa = PBXBuildFile; fileRef = 4DCC035D13F83F0900AD9C30 /* db_link_button_down.png */; };
+		4DCC038A13F83F0900AD9C30 /* db_link_header.png in Resources */ = {isa = PBXBuildFile; fileRef = 4DCC035E13F83F0900AD9C30 /* db_link_header.png */; };
+		4DCC038B13F83F0900AD9C30 /* db_link_header@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4DCC035F13F83F0900AD9C30 /* db_link_header@2x.png */; };
+		4DCC038C13F83F0900AD9C30 /* db_logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 4DCC036013F83F0900AD9C30 /* db_logo.png */; };
+		4DCC038D13F83F0900AD9C30 /* db_logo@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4DCC036113F83F0900AD9C30 /* db_logo@2x.png */; };
+		4DCC038F13F8400000AD9C30 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4DCC038E13F8400000AD9C30 /* Security.framework */; };
+		4DCC039213F841B800AD9C30 /* DropBoxUploader.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DCC039113F841B800AD9C30 /* DropBoxUploader.m */; };
+		4DDE02A813F91B1200F94951 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4DDE02A713F91B1200F94951 /* QuartzCore.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		4D23006913F64FD500F2A3E5 /* MotionMonitor.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MotionMonitor.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		4D23006D13F64FD500F2A3E5 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		4D23006F13F64FD500F2A3E5 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		4D23007113F64FD500F2A3E5 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		4D23007513F64FD500F2A3E5 /* MotionMonitor-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "MotionMonitor-Info.plist"; sourceTree = "<group>"; };
+		4D23007713F64FD500F2A3E5 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		4D23007913F64FD500F2A3E5 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		4D23007B13F64FD500F2A3E5 /* MotionMonitor-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MotionMonitor-Prefix.pch"; sourceTree = "<group>"; };
+		4D23007C13F64FD500F2A3E5 /* MotionMonitorAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MotionMonitorAppDelegate.h; sourceTree = "<group>"; };
+		4D23007D13F64FD500F2A3E5 /* MotionMonitorAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MotionMonitorAppDelegate.m; sourceTree = "<group>"; };
+		4D23008013F64FD500F2A3E5 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainWindow.xib; sourceTree = "<group>"; };
+		4D23008213F64FD500F2A3E5 /* MotionMonitorViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MotionMonitorViewController.h; sourceTree = "<group>"; };
+		4D23008313F64FD500F2A3E5 /* MotionMonitorViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MotionMonitorViewController.m; sourceTree = "<group>"; };
+		4D23008613F64FD500F2A3E5 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MotionMonitorViewController.xib; sourceTree = "<group>"; };
+		4D23008D13F6519700F2A3E5 /* CoreMotion.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMotion.framework; path = System/Library/Frameworks/CoreMotion.framework; sourceTree = SDKROOT; };
+		4DAA0C1D13F6C373007B8075 /* MetricsLog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MetricsLog.h; sourceTree = "<group>"; };
+		4DAA0C1E13F6C373007B8075 /* MetricsLog.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MetricsLog.m; sourceTree = "<group>"; };
+		4DAA0C2713F7B1B7007B8075 /* MotionService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MotionService.h; sourceTree = "<group>"; };
+		4DAA0C2813F7B1B7007B8075 /* MotionService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MotionService.m; sourceTree = "<group>"; };
+		4DAA0C2A13F7B42F007B8075 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		4DCC030C13F83F0900AD9C30 /* DBAccountInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DBAccountInfo.h; sourceTree = "<group>"; };
+		4DCC030D13F83F0900AD9C30 /* DBAccountInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DBAccountInfo.m; sourceTree = "<group>"; };
+		4DCC030E13F83F0900AD9C30 /* DBCreateAccountController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DBCreateAccountController.h; sourceTree = "<group>"; };
+		4DCC030F13F83F0900AD9C30 /* DBCreateAccountController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DBCreateAccountController.m; sourceTree = "<group>"; };
+		4DCC031013F83F0900AD9C30 /* DBError.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DBError.h; sourceTree = "<group>"; };
+		4DCC031113F83F0900AD9C30 /* DBError.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DBError.m; sourceTree = "<group>"; };
+		4DCC031213F83F0900AD9C30 /* DBLoadingView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DBLoadingView.h; sourceTree = "<group>"; };
+		4DCC031313F83F0900AD9C30 /* DBLoadingView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DBLoadingView.m; sourceTree = "<group>"; };
+		4DCC031413F83F0900AD9C30 /* DBLoginController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DBLoginController.h; sourceTree = "<group>"; };
+		4DCC031513F83F0900AD9C30 /* DBLoginController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DBLoginController.m; sourceTree = "<group>"; };
+		4DCC031613F83F0900AD9C30 /* DBMetadata.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DBMetadata.h; sourceTree = "<group>"; };
+		4DCC031713F83F0900AD9C30 /* DBMetadata.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DBMetadata.m; sourceTree = "<group>"; };
+		4DCC031813F83F0900AD9C30 /* DBQuota.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DBQuota.h; sourceTree = "<group>"; };
+		4DCC031913F83F0900AD9C30 /* DBQuota.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DBQuota.m; sourceTree = "<group>"; };
+		4DCC031A13F83F0900AD9C30 /* DBRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DBRequest.h; sourceTree = "<group>"; };
+		4DCC031B13F83F0900AD9C30 /* DBRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DBRequest.m; sourceTree = "<group>"; };
+		4DCC031C13F83F0900AD9C30 /* DBRestClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DBRestClient.h; sourceTree = "<group>"; };
+		4DCC031D13F83F0900AD9C30 /* DBRestClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DBRestClient.m; sourceTree = "<group>"; };
+		4DCC031E13F83F0900AD9C30 /* DBSession.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DBSession.h; sourceTree = "<group>"; };
+		4DCC031F13F83F0900AD9C30 /* DBSession.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DBSession.m; sourceTree = "<group>"; };
+		4DCC032013F83F0900AD9C30 /* DropboxSDK.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DropboxSDK.h; sourceTree = "<group>"; };
+		4DCC032213F83F0900AD9C30 /* JSON.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSON.h; sourceTree = "<group>"; };
+		4DCC032313F83F0900AD9C30 /* NSObject+SBJSON.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+SBJSON.h"; sourceTree = "<group>"; };
+		4DCC032413F83F0900AD9C30 /* NSObject+SBJSON.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+SBJSON.m"; sourceTree = "<group>"; };
+		4DCC032513F83F0900AD9C30 /* NSString+SBJSON.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+SBJSON.h"; sourceTree = "<group>"; };
+		4DCC032613F83F0900AD9C30 /* NSString+SBJSON.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+SBJSON.m"; sourceTree = "<group>"; };
+		4DCC032713F83F0900AD9C30 /* SBJSON.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJSON.h; sourceTree = "<group>"; };
+		4DCC032813F83F0900AD9C30 /* SBJSON.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJSON.m; sourceTree = "<group>"; };
+		4DCC032913F83F0900AD9C30 /* SBJsonBase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonBase.h; sourceTree = "<group>"; };
+		4DCC032A13F83F0900AD9C30 /* SBJsonBase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonBase.m; sourceTree = "<group>"; };
+		4DCC032B13F83F0900AD9C30 /* SBJsonParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonParser.h; sourceTree = "<group>"; };
+		4DCC032C13F83F0900AD9C30 /* SBJsonParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonParser.m; sourceTree = "<group>"; };
+		4DCC032D13F83F0900AD9C30 /* SBJsonWriter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonWriter.h; sourceTree = "<group>"; };
+		4DCC032E13F83F0900AD9C30 /* SBJsonWriter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonWriter.m; sourceTree = "<group>"; };
+		4DCC033113F83F0900AD9C30 /* Base64Transcoder.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = Base64Transcoder.c; sourceTree = "<group>"; };
+		4DCC033213F83F0900AD9C30 /* Base64Transcoder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Base64Transcoder.h; sourceTree = "<group>"; };
+		4DCC033313F83F0900AD9C30 /* MPDebug.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MPDebug.h; sourceTree = "<group>"; };
+		4DCC033413F83F0900AD9C30 /* MPOAuth.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MPOAuth.h; sourceTree = "<group>"; };
+		4DCC033513F83F0900AD9C30 /* MPOAuthAPI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MPOAuthAPI.h; sourceTree = "<group>"; };
+		4DCC033613F83F0900AD9C30 /* MPOAuthAPI.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MPOAuthAPI.m; sourceTree = "<group>"; };
+		4DCC033713F83F0900AD9C30 /* MPOAuthAPIRequestLoader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MPOAuthAPIRequestLoader.h; sourceTree = "<group>"; };
+		4DCC033813F83F0900AD9C30 /* MPOAuthAPIRequestLoader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MPOAuthAPIRequestLoader.m; sourceTree = "<group>"; };
+		4DCC033913F83F0900AD9C30 /* MPOAuthAuthenticationMethod.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MPOAuthAuthenticationMethod.h; sourceTree = "<group>"; };
+		4DCC033A13F83F0900AD9C30 /* MPOAuthAuthenticationMethod.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MPOAuthAuthenticationMethod.m; sourceTree = "<group>"; };
+		4DCC033B13F83F0900AD9C30 /* MPOAuthAuthenticationMethodOAuth.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MPOAuthAuthenticationMethodOAuth.h; sourceTree = "<group>"; };
+		4DCC033C13F83F0900AD9C30 /* MPOAuthAuthenticationMethodOAuth.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MPOAuthAuthenticationMethodOAuth.m; sourceTree = "<group>"; };
+		4DCC033D13F83F0900AD9C30 /* MPOAuthConnection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MPOAuthConnection.h; sourceTree = "<group>"; };
+		4DCC033E13F83F0900AD9C30 /* MPOAuthConnection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MPOAuthConnection.m; sourceTree = "<group>"; };
+		4DCC033F13F83F0900AD9C30 /* MPOAuthCredentiaIConcreteStore+KeychainAdditionsMac.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "MPOAuthCredentiaIConcreteStore+KeychainAdditionsMac.m"; sourceTree = "<group>"; };
+		4DCC034013F83F0900AD9C30 /* MPOAuthCredentialConcreteStore+KeychainAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MPOAuthCredentialConcreteStore+KeychainAdditions.h"; sourceTree = "<group>"; };
+		4DCC034113F83F0900AD9C30 /* MPOAuthCredentialConcreteStore+KeychainAdditionsiPhone.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "MPOAuthCredentialConcreteStore+KeychainAdditionsiPhone.m"; sourceTree = "<group>"; };
+		4DCC034213F83F0900AD9C30 /* MPOAuthCredentialConcreteStore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MPOAuthCredentialConcreteStore.h; sourceTree = "<group>"; };
+		4DCC034313F83F0900AD9C30 /* MPOAuthCredentialConcreteStore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MPOAuthCredentialConcreteStore.m; sourceTree = "<group>"; };
+		4DCC034413F83F0900AD9C30 /* MPOAuthCredentialStore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MPOAuthCredentialStore.h; sourceTree = "<group>"; };
+		4DCC034513F83F0900AD9C30 /* MPOAuthParameterFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MPOAuthParameterFactory.h; sourceTree = "<group>"; };
+		4DCC034613F83F0900AD9C30 /* MPOAuthSignatureParameter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MPOAuthSignatureParameter.h; sourceTree = "<group>"; };
+		4DCC034713F83F0900AD9C30 /* MPOAuthSignatureParameter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MPOAuthSignatureParameter.m; sourceTree = "<group>"; };
+		4DCC034813F83F0900AD9C30 /* MPOAuthURLRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MPOAuthURLRequest.h; sourceTree = "<group>"; };
+		4DCC034913F83F0900AD9C30 /* MPOAuthURLRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MPOAuthURLRequest.m; sourceTree = "<group>"; };
+		4DCC034A13F83F0900AD9C30 /* MPOAuthURLResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MPOAuthURLResponse.h; sourceTree = "<group>"; };
+		4DCC034B13F83F0900AD9C30 /* MPOAuthURLResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MPOAuthURLResponse.m; sourceTree = "<group>"; };
+		4DCC034C13F83F0900AD9C30 /* MPURLRequestParameter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MPURLRequestParameter.h; sourceTree = "<group>"; };
+		4DCC034D13F83F0900AD9C30 /* MPURLRequestParameter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MPURLRequestParameter.m; sourceTree = "<group>"; };
+		4DCC034E13F83F0900AD9C30 /* NSString+URLEscapingAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+URLEscapingAdditions.h"; sourceTree = "<group>"; };
+		4DCC034F13F83F0900AD9C30 /* NSString+URLEscapingAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+URLEscapingAdditions.m"; sourceTree = "<group>"; };
+		4DCC035013F83F0900AD9C30 /* NSURL+MPURLParameterAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSURL+MPURLParameterAdditions.h"; sourceTree = "<group>"; };
+		4DCC035113F83F0900AD9C30 /* NSURL+MPURLParameterAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSURL+MPURLParameterAdditions.m"; sourceTree = "<group>"; };
+		4DCC035213F83F0900AD9C30 /* NSURLResponse+Encoding.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSURLResponse+Encoding.h"; sourceTree = "<group>"; };
+		4DCC035313F83F0900AD9C30 /* NSURLResponse+Encoding.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSURLResponse+Encoding.m"; sourceTree = "<group>"; };
+		4DCC035413F83F0900AD9C30 /* NSString+Dropbox.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Dropbox.h"; sourceTree = "<group>"; };
+		4DCC035513F83F0900AD9C30 /* NSString+Dropbox.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Dropbox.m"; sourceTree = "<group>"; };
+		4DCC035713F83F0900AD9C30 /* db_background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = db_background.png; sourceTree = "<group>"; };
+		4DCC035813F83F0900AD9C30 /* db_create_account.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = db_create_account.png; sourceTree = "<group>"; };
+		4DCC035913F83F0900AD9C30 /* db_create_account@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "db_create_account@2x.png"; sourceTree = "<group>"; };
+		4DCC035A13F83F0900AD9C30 /* db_create_account_button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = db_create_account_button.png; sourceTree = "<group>"; };
+		4DCC035B13F83F0900AD9C30 /* db_create_account_button_down.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = db_create_account_button_down.png; sourceTree = "<group>"; };
+		4DCC035C13F83F0900AD9C30 /* db_link_button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = db_link_button.png; sourceTree = "<group>"; };
+		4DCC035D13F83F0900AD9C30 /* db_link_button_down.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = db_link_button_down.png; sourceTree = "<group>"; };
+		4DCC035E13F83F0900AD9C30 /* db_link_header.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = db_link_header.png; sourceTree = "<group>"; };
+		4DCC035F13F83F0900AD9C30 /* db_link_header@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "db_link_header@2x.png"; sourceTree = "<group>"; };
+		4DCC036013F83F0900AD9C30 /* db_logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = db_logo.png; sourceTree = "<group>"; };
+		4DCC036113F83F0900AD9C30 /* db_logo@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "db_logo@2x.png"; sourceTree = "<group>"; };
+		4DCC038E13F8400000AD9C30 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		4DCC039013F841B800AD9C30 /* DropBoxUploader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DropBoxUploader.h; sourceTree = "<group>"; };
+		4DCC039113F841B800AD9C30 /* DropBoxUploader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DropBoxUploader.m; sourceTree = "<group>"; };
+		4DDE02A713F91B1200F94951 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		4D23006613F64FD500F2A3E5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4DDE02A813F91B1200F94951 /* QuartzCore.framework in Frameworks */,
+				4DCC038F13F8400000AD9C30 /* Security.framework in Frameworks */,
+				4DAA0C2B13F7B42F007B8075 /* CoreLocation.framework in Frameworks */,
+				4D23008E13F6519700F2A3E5 /* CoreMotion.framework in Frameworks */,
+				4D23006E13F64FD500F2A3E5 /* UIKit.framework in Frameworks */,
+				4D23007013F64FD500F2A3E5 /* Foundation.framework in Frameworks */,
+				4D23007213F64FD500F2A3E5 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4D23005E13F64FD500F2A3E5 = {
+			isa = PBXGroup;
+			children = (
+				4DCC030B13F83F0900AD9C30 /* DropboxSDK */,
+				4D23007313F64FD500F2A3E5 /* MotionMonitor */,
+				4D23006C13F64FD500F2A3E5 /* Frameworks */,
+				4D23006A13F64FD500F2A3E5 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		4D23006A13F64FD500F2A3E5 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4D23006913F64FD500F2A3E5 /* MotionMonitor.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		4D23006C13F64FD500F2A3E5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4DDE02A713F91B1200F94951 /* QuartzCore.framework */,
+				4DCC038E13F8400000AD9C30 /* Security.framework */,
+				4DAA0C2A13F7B42F007B8075 /* CoreLocation.framework */,
+				4D23008D13F6519700F2A3E5 /* CoreMotion.framework */,
+				4D23006D13F64FD500F2A3E5 /* UIKit.framework */,
+				4D23006F13F64FD500F2A3E5 /* Foundation.framework */,
+				4D23007113F64FD500F2A3E5 /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		4D23007313F64FD500F2A3E5 /* MotionMonitor */ = {
+			isa = PBXGroup;
+			children = (
+				4D23007C13F64FD500F2A3E5 /* MotionMonitorAppDelegate.h */,
+				4D23007D13F64FD500F2A3E5 /* MotionMonitorAppDelegate.m */,
+				4D23007F13F64FD500F2A3E5 /* MainWindow.xib */,
+				4D23008213F64FD500F2A3E5 /* MotionMonitorViewController.h */,
+				4D23008313F64FD500F2A3E5 /* MotionMonitorViewController.m */,
+				4D23008513F64FD500F2A3E5 /* MotionMonitorViewController.xib */,
+				4D23007413F64FD500F2A3E5 /* Supporting Files */,
+				4DAA0C1D13F6C373007B8075 /* MetricsLog.h */,
+				4DAA0C1E13F6C373007B8075 /* MetricsLog.m */,
+				4DAA0C2713F7B1B7007B8075 /* MotionService.h */,
+				4DAA0C2813F7B1B7007B8075 /* MotionService.m */,
+				4DCC039013F841B800AD9C30 /* DropBoxUploader.h */,
+				4DCC039113F841B800AD9C30 /* DropBoxUploader.m */,
+			);
+			path = MotionMonitor;
+			sourceTree = "<group>";
+		};
+		4D23007413F64FD500F2A3E5 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				4D23007513F64FD500F2A3E5 /* MotionMonitor-Info.plist */,
+				4D23007613F64FD500F2A3E5 /* InfoPlist.strings */,
+				4D23007913F64FD500F2A3E5 /* main.m */,
+				4D23007B13F64FD500F2A3E5 /* MotionMonitor-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		4DCC030B13F83F0900AD9C30 /* DropboxSDK */ = {
+			isa = PBXGroup;
+			children = (
+				4DCC030C13F83F0900AD9C30 /* DBAccountInfo.h */,
+				4DCC030D13F83F0900AD9C30 /* DBAccountInfo.m */,
+				4DCC030E13F83F0900AD9C30 /* DBCreateAccountController.h */,
+				4DCC030F13F83F0900AD9C30 /* DBCreateAccountController.m */,
+				4DCC031013F83F0900AD9C30 /* DBError.h */,
+				4DCC031113F83F0900AD9C30 /* DBError.m */,
+				4DCC031213F83F0900AD9C30 /* DBLoadingView.h */,
+				4DCC031313F83F0900AD9C30 /* DBLoadingView.m */,
+				4DCC031413F83F0900AD9C30 /* DBLoginController.h */,
+				4DCC031513F83F0900AD9C30 /* DBLoginController.m */,
+				4DCC031613F83F0900AD9C30 /* DBMetadata.h */,
+				4DCC031713F83F0900AD9C30 /* DBMetadata.m */,
+				4DCC031813F83F0900AD9C30 /* DBQuota.h */,
+				4DCC031913F83F0900AD9C30 /* DBQuota.m */,
+				4DCC031A13F83F0900AD9C30 /* DBRequest.h */,
+				4DCC031B13F83F0900AD9C30 /* DBRequest.m */,
+				4DCC031C13F83F0900AD9C30 /* DBRestClient.h */,
+				4DCC031D13F83F0900AD9C30 /* DBRestClient.m */,
+				4DCC031E13F83F0900AD9C30 /* DBSession.h */,
+				4DCC031F13F83F0900AD9C30 /* DBSession.m */,
+				4DCC032013F83F0900AD9C30 /* DropboxSDK.h */,
+				4DCC032113F83F0900AD9C30 /* JSON */,
+				4DCC032F13F83F0900AD9C30 /* MPOAuth */,
+				4DCC035413F83F0900AD9C30 /* NSString+Dropbox.h */,
+				4DCC035513F83F0900AD9C30 /* NSString+Dropbox.m */,
+				4DCC035613F83F0900AD9C30 /* Resources */,
+			);
+			path = DropboxSDK;
+			sourceTree = "<group>";
+		};
+		4DCC032113F83F0900AD9C30 /* JSON */ = {
+			isa = PBXGroup;
+			children = (
+				4DCC032213F83F0900AD9C30 /* JSON.h */,
+				4DCC032313F83F0900AD9C30 /* NSObject+SBJSON.h */,
+				4DCC032413F83F0900AD9C30 /* NSObject+SBJSON.m */,
+				4DCC032513F83F0900AD9C30 /* NSString+SBJSON.h */,
+				4DCC032613F83F0900AD9C30 /* NSString+SBJSON.m */,
+				4DCC032713F83F0900AD9C30 /* SBJSON.h */,
+				4DCC032813F83F0900AD9C30 /* SBJSON.m */,
+				4DCC032913F83F0900AD9C30 /* SBJsonBase.h */,
+				4DCC032A13F83F0900AD9C30 /* SBJsonBase.m */,
+				4DCC032B13F83F0900AD9C30 /* SBJsonParser.h */,
+				4DCC032C13F83F0900AD9C30 /* SBJsonParser.m */,
+				4DCC032D13F83F0900AD9C30 /* SBJsonWriter.h */,
+				4DCC032E13F83F0900AD9C30 /* SBJsonWriter.m */,
+			);
+			path = JSON;
+			sourceTree = "<group>";
+		};
+		4DCC032F13F83F0900AD9C30 /* MPOAuth */ = {
+			isa = PBXGroup;
+			children = (
+				4DCC033013F83F0900AD9C30 /* Crypto */,
+				4DCC033313F83F0900AD9C30 /* MPDebug.h */,
+				4DCC033413F83F0900AD9C30 /* MPOAuth.h */,
+				4DCC033513F83F0900AD9C30 /* MPOAuthAPI.h */,
+				4DCC033613F83F0900AD9C30 /* MPOAuthAPI.m */,
+				4DCC033713F83F0900AD9C30 /* MPOAuthAPIRequestLoader.h */,
+				4DCC033813F83F0900AD9C30 /* MPOAuthAPIRequestLoader.m */,
+				4DCC033913F83F0900AD9C30 /* MPOAuthAuthenticationMethod.h */,
+				4DCC033A13F83F0900AD9C30 /* MPOAuthAuthenticationMethod.m */,
+				4DCC033B13F83F0900AD9C30 /* MPOAuthAuthenticationMethodOAuth.h */,
+				4DCC033C13F83F0900AD9C30 /* MPOAuthAuthenticationMethodOAuth.m */,
+				4DCC033D13F83F0900AD9C30 /* MPOAuthConnection.h */,
+				4DCC033E13F83F0900AD9C30 /* MPOAuthConnection.m */,
+				4DCC033F13F83F0900AD9C30 /* MPOAuthCredentiaIConcreteStore+KeychainAdditionsMac.m */,
+				4DCC034013F83F0900AD9C30 /* MPOAuthCredentialConcreteStore+KeychainAdditions.h */,
+				4DCC034113F83F0900AD9C30 /* MPOAuthCredentialConcreteStore+KeychainAdditionsiPhone.m */,
+				4DCC034213F83F0900AD9C30 /* MPOAuthCredentialConcreteStore.h */,
+				4DCC034313F83F0900AD9C30 /* MPOAuthCredentialConcreteStore.m */,
+				4DCC034413F83F0900AD9C30 /* MPOAuthCredentialStore.h */,
+				4DCC034513F83F0900AD9C30 /* MPOAuthParameterFactory.h */,
+				4DCC034613F83F0900AD9C30 /* MPOAuthSignatureParameter.h */,
+				4DCC034713F83F0900AD9C30 /* MPOAuthSignatureParameter.m */,
+				4DCC034813F83F0900AD9C30 /* MPOAuthURLRequest.h */,
+				4DCC034913F83F0900AD9C30 /* MPOAuthURLRequest.m */,
+				4DCC034A13F83F0900AD9C30 /* MPOAuthURLResponse.h */,
+				4DCC034B13F83F0900AD9C30 /* MPOAuthURLResponse.m */,
+				4DCC034C13F83F0900AD9C30 /* MPURLRequestParameter.h */,
+				4DCC034D13F83F0900AD9C30 /* MPURLRequestParameter.m */,
+				4DCC034E13F83F0900AD9C30 /* NSString+URLEscapingAdditions.h */,
+				4DCC034F13F83F0900AD9C30 /* NSString+URLEscapingAdditions.m */,
+				4DCC035013F83F0900AD9C30 /* NSURL+MPURLParameterAdditions.h */,
+				4DCC035113F83F0900AD9C30 /* NSURL+MPURLParameterAdditions.m */,
+				4DCC035213F83F0900AD9C30 /* NSURLResponse+Encoding.h */,
+				4DCC035313F83F0900AD9C30 /* NSURLResponse+Encoding.m */,
+			);
+			path = MPOAuth;
+			sourceTree = "<group>";
+		};
+		4DCC033013F83F0900AD9C30 /* Crypto */ = {
+			isa = PBXGroup;
+			children = (
+				4DCC033113F83F0900AD9C30 /* Base64Transcoder.c */,
+				4DCC033213F83F0900AD9C30 /* Base64Transcoder.h */,
+			);
+			path = Crypto;
+			sourceTree = "<group>";
+		};
+		4DCC035613F83F0900AD9C30 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				4DCC035713F83F0900AD9C30 /* db_background.png */,
+				4DCC035813F83F0900AD9C30 /* db_create_account.png */,
+				4DCC035913F83F0900AD9C30 /* db_create_account@2x.png */,
+				4DCC035A13F83F0900AD9C30 /* db_create_account_button.png */,
+				4DCC035B13F83F0900AD9C30 /* db_create_account_button_down.png */,
+				4DCC035C13F83F0900AD9C30 /* db_link_button.png */,
+				4DCC035D13F83F0900AD9C30 /* db_link_button_down.png */,
+				4DCC035E13F83F0900AD9C30 /* db_link_header.png */,
+				4DCC035F13F83F0900AD9C30 /* db_link_header@2x.png */,
+				4DCC036013F83F0900AD9C30 /* db_logo.png */,
+				4DCC036113F83F0900AD9C30 /* db_logo@2x.png */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		4D23006813F64FD500F2A3E5 /* MotionMonitor */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4D23008A13F64FD500F2A3E5 /* Build configuration list for PBXNativeTarget "MotionMonitor" */;
+			buildPhases = (
+				4D23006513F64FD500F2A3E5 /* Sources */,
+				4D23006613F64FD500F2A3E5 /* Frameworks */,
+				4D23006713F64FD500F2A3E5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MotionMonitor;
+			productName = MotionMonitor;
+			productReference = 4D23006913F64FD500F2A3E5 /* MotionMonitor.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		4D23006013F64FD500F2A3E5 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				ORGANIZATIONNAME = "Digital Morphosis Limited";
+			};
+			buildConfigurationList = 4D23006313F64FD500F2A3E5 /* Build configuration list for PBXProject "MotionMonitor" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 4D23005E13F64FD500F2A3E5;
+			productRefGroup = 4D23006A13F64FD500F2A3E5 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				4D23006813F64FD500F2A3E5 /* MotionMonitor */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		4D23006713F64FD500F2A3E5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4D23007813F64FD500F2A3E5 /* InfoPlist.strings in Resources */,
+				4D23008113F64FD500F2A3E5 /* MainWindow.xib in Resources */,
+				4D23008713F64FD500F2A3E5 /* MotionMonitorViewController.xib in Resources */,
+				4DCC038313F83F0900AD9C30 /* db_background.png in Resources */,
+				4DCC038413F83F0900AD9C30 /* db_create_account.png in Resources */,
+				4DCC038513F83F0900AD9C30 /* db_create_account@2x.png in Resources */,
+				4DCC038613F83F0900AD9C30 /* db_create_account_button.png in Resources */,
+				4DCC038713F83F0900AD9C30 /* db_create_account_button_down.png in Resources */,
+				4DCC038813F83F0900AD9C30 /* db_link_button.png in Resources */,
+				4DCC038913F83F0900AD9C30 /* db_link_button_down.png in Resources */,
+				4DCC038A13F83F0900AD9C30 /* db_link_header.png in Resources */,
+				4DCC038B13F83F0900AD9C30 /* db_link_header@2x.png in Resources */,
+				4DCC038C13F83F0900AD9C30 /* db_logo.png in Resources */,
+				4DCC038D13F83F0900AD9C30 /* db_logo@2x.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		4D23006513F64FD500F2A3E5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4D23007A13F64FD500F2A3E5 /* main.m in Sources */,
+				4D23007E13F64FD500F2A3E5 /* MotionMonitorAppDelegate.m in Sources */,
+				4D23008413F64FD500F2A3E5 /* MotionMonitorViewController.m in Sources */,
+				4DAA0C1F13F6C373007B8075 /* MetricsLog.m in Sources */,
+				4DAA0C2913F7B1B7007B8075 /* MotionService.m in Sources */,
+				4DCC036213F83F0900AD9C30 /* DBAccountInfo.m in Sources */,
+				4DCC036313F83F0900AD9C30 /* DBCreateAccountController.m in Sources */,
+				4DCC036413F83F0900AD9C30 /* DBError.m in Sources */,
+				4DCC036513F83F0900AD9C30 /* DBLoadingView.m in Sources */,
+				4DCC036613F83F0900AD9C30 /* DBLoginController.m in Sources */,
+				4DCC036713F83F0900AD9C30 /* DBMetadata.m in Sources */,
+				4DCC036813F83F0900AD9C30 /* DBQuota.m in Sources */,
+				4DCC036913F83F0900AD9C30 /* DBRequest.m in Sources */,
+				4DCC036A13F83F0900AD9C30 /* DBRestClient.m in Sources */,
+				4DCC036B13F83F0900AD9C30 /* DBSession.m in Sources */,
+				4DCC036C13F83F0900AD9C30 /* NSObject+SBJSON.m in Sources */,
+				4DCC036D13F83F0900AD9C30 /* NSString+SBJSON.m in Sources */,
+				4DCC036E13F83F0900AD9C30 /* SBJSON.m in Sources */,
+				4DCC036F13F83F0900AD9C30 /* SBJsonBase.m in Sources */,
+				4DCC037013F83F0900AD9C30 /* SBJsonParser.m in Sources */,
+				4DCC037113F83F0900AD9C30 /* SBJsonWriter.m in Sources */,
+				4DCC037213F83F0900AD9C30 /* Base64Transcoder.c in Sources */,
+				4DCC037313F83F0900AD9C30 /* MPOAuthAPI.m in Sources */,
+				4DCC037413F83F0900AD9C30 /* MPOAuthAPIRequestLoader.m in Sources */,
+				4DCC037513F83F0900AD9C30 /* MPOAuthAuthenticationMethod.m in Sources */,
+				4DCC037613F83F0900AD9C30 /* MPOAuthAuthenticationMethodOAuth.m in Sources */,
+				4DCC037713F83F0900AD9C30 /* MPOAuthConnection.m in Sources */,
+				4DCC037813F83F0900AD9C30 /* MPOAuthCredentiaIConcreteStore+KeychainAdditionsMac.m in Sources */,
+				4DCC037913F83F0900AD9C30 /* MPOAuthCredentialConcreteStore+KeychainAdditionsiPhone.m in Sources */,
+				4DCC037A13F83F0900AD9C30 /* MPOAuthCredentialConcreteStore.m in Sources */,
+				4DCC037B13F83F0900AD9C30 /* MPOAuthSignatureParameter.m in Sources */,
+				4DCC037C13F83F0900AD9C30 /* MPOAuthURLRequest.m in Sources */,
+				4DCC037D13F83F0900AD9C30 /* MPOAuthURLResponse.m in Sources */,
+				4DCC037E13F83F0900AD9C30 /* MPURLRequestParameter.m in Sources */,
+				4DCC037F13F83F0900AD9C30 /* NSString+URLEscapingAdditions.m in Sources */,
+				4DCC038013F83F0900AD9C30 /* NSURL+MPURLParameterAdditions.m in Sources */,
+				4DCC038113F83F0900AD9C30 /* NSURLResponse+Encoding.m in Sources */,
+				4DCC038213F83F0900AD9C30 /* NSString+Dropbox.m in Sources */,
+				4DCC039213F841B800AD9C30 /* DropBoxUploader.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		4D23007613F64FD500F2A3E5 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4D23007713F64FD500F2A3E5 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		4D23007F13F64FD500F2A3E5 /* MainWindow.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4D23008013F64FD500F2A3E5 /* en */,
+			);
+			name = MainWindow.xib;
+			sourceTree = "<group>";
+		};
+		4D23008513F64FD500F2A3E5 /* MotionMonitorViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4D23008613F64FD500F2A3E5 /* en */,
+			);
+			name = MotionMonitorViewController.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		4D23008813F64FD500F2A3E5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.2;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		4D23008913F64FD500F2A3E5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.2;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		4D23008B13F64FD500F2A3E5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MotionMonitor/MotionMonitor-Prefix.pch";
+				INFOPLIST_FILE = "MotionMonitor/MotionMonitor-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		4D23008C13F64FD500F2A3E5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MotionMonitor/MotionMonitor-Prefix.pch";
+				INFOPLIST_FILE = "MotionMonitor/MotionMonitor-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4D23006313F64FD500F2A3E5 /* Build configuration list for PBXProject "MotionMonitor" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4D23008813F64FD500F2A3E5 /* Debug */,
+				4D23008913F64FD500F2A3E5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4D23008A13F64FD500F2A3E5 /* Build configuration list for PBXNativeTarget "MotionMonitor" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4D23008B13F64FD500F2A3E5 /* Debug */,
+				4D23008C13F64FD500F2A3E5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 4D23006013F64FD500F2A3E5 /* Project object */;
+}
